@@ -1,4 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
+import {
+  Project
+} from '../models.interface';
 
 @Component({
   selector: 'app-project-view',
@@ -7,9 +13,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectViewComponent implements OnInit {
 
-  constructor() { }
+  projectArray: Array < Project > ;
+
+  constructor() {}
 
   ngOnInit() {
+    this.projectArray = [];
+    // Proyecto Duack
+    this.projectArray.push({
+      id: 1,
+      name: 'Duack',
+      author: 'Eduardo Navarro',
+      date: 'Hoy',
+      tags: ["Java", "Android", "Android Studio", "C#"],
+      resume: "Yeah",
+      description: "Descripcion del proyecto Duack ira aqui en proximas implementaciones",
+      image: `'../../assets/duack.png'`
+    });
+    // Proyecto GTT
+    this.projectArray.push({
+      id: 2,
+      name: 'Proyecto GTT',
+      author: 'Eduardo Navarro',
+      date: 'Hoy',
+      tags: ["Javascript", "Typescript", "Angular", "C#"],
+      resume: "Yeah",
+      description: "Descripcion del proyecto GTT ira aqui en proximas implementaciones",
+      image: `'../../assets/LogoGTT.jpg'`
+    });
   }
 
 }

@@ -51,6 +51,8 @@
       background-size: cover;
       background-position: center;
       transition: transform .2s;
+      height: 100%;
+      width: 100%;
     }
     .details,
     .details ul {
@@ -80,19 +82,19 @@
       .author:before {
         font-family: FontAwesome;
         margin-right: 10px;
-        content: "😭";
+        content: "👥";
       }
   
       .date:before {
         font-family: FontAwesome;
         margin-right: 10px;
-        content: "😜";
+        content: "📆";
       }
   
       .tags {
         ul:before {
           font-family: FontAwesome;
-          content: "🤩";
+          content: "🔖";
           margin-right: 10px;
         }
         li {
