@@ -1,8 +1,64 @@
-html {
-    height: 100%;
+body {
+    background-image: url("../../assets/fondo4.png");
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-body {
+
+.flex-card-personal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card-personal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    width: 70vw;
+    background-color: #8fd6e35e;
+    border-radius: 10px;
+    border-left: 15px rgb(37, 37, 37) solid;
+    border-right: 15px rgb(26, 26, 26) solid;
+    border-bottom: 7px #73d0df outset;
+    border-top: 7px #73d0df outset;
+    box-sizing: border-box;
+    box-shadow: 7px 7px rgba(0, 0, 0, 0.445);
+}
+
+.img-edu {
+    border-radius: 50%;
+    margin-left: 2vw;
+}
+
+.edu-initial {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    max-width: 50vw;
+    font-size: 1.5em;
+    color: rgb(228, 228, 228);
+    font-weight: bold;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.linea-separadora {
+    height: 0.4vh;
+    background-color: silver;
+    border: 0.1vh solid rgb(151, 151, 151);
+}
+
+// ------------ Botones ------------------------
+
+.section-buttons {
     overflow: hidden;
     height: 100%;
     background: rgba(255,255,255,1);
@@ -38,6 +94,7 @@ section#main-menu ul {
     margin: 50px 0 0 0;
     list-style: none;
     perspective: 800px;
+    height: 100vh;
 }
 
 section#main-menu ul li {
