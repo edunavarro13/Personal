@@ -25,7 +25,8 @@ body {
     justify-content: center;
     min-height: 60vh;
     width: 70vw;
-    background-color: #8fd6e35e;
+    background-color: #8fd6e35e; /* For browsers that do not support gradients */
+    background-image: radial-gradient(#8fd6e35e, #76aeb85e, #3d5b615e); /* Standard syntax (must be last) */
     border-radius: 10px;
     border-left: 15px rgb(37, 37, 37) solid;
     border-right: 15px rgb(26, 26, 26) solid;

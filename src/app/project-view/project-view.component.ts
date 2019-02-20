@@ -36,10 +36,21 @@ export class ProjectViewComponent implements OnInit {
       name: 'Proyecto GTT',
       author: 'Eduardo Navarro',
       date: 'Hoy',
-      tags: ["Javascript", "Typescript", "Angular", "C#"],
+      tags: ["Javascript", "Typescript", "Angular", "C#", "HTML5", "CSS", "Visual Studio"],
       resume: "Yeah",
       description: "Descripcion del proyecto GTT ira aqui en proximas implementaciones",
       image: `'../../assets/LogoGTT.jpg'`
+    });
+    // Proyecto N1M
+    this.projectArray.push({
+      id: 3,
+      name: 'N1M',
+      author: 'Eduardo Navarro',
+      date: 'Hoy',
+      tags: ["Javascript", "Bootstrap", "Angular", "HTML", "CSS"],
+      resume: "Yeah",
+      description: "Descripcion del proyecto N1M ira aqui en proximas implementaciones",
+      image: `'../../assets/LogoN1M_App.png'`
     });
   }
 

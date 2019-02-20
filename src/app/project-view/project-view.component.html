@@ -1,4 +1,4 @@
-<section *ngIf="projectArray">
+<section class="section-project" *ngIf="projectArray">
   <div *ngFor="let project of projectArray">
     <div *ngIf="project.id % 2 !== 0" class="blog-card">
       <div class="meta">
@@ -8,9 +8,9 @@
           <li class="date">{{ project.date }}</li>
           <li class="tags">
             <ul>
-              <li><a href="#">Learn</a></li>
-              <li><a href="#">Code</a></li>
-              <li><a href="#">JavaScript</a></li>
+              <li *ngFor="let tag of project.tags">
+                  <a href="#">◽️ {{ tag }}</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -32,9 +32,9 @@
           <li class="date">{{ project.date }}</li>
           <li class="tags">
             <ul>
-              <li><a href="#">Learn</a></li>
-              <li><a href="#">Code</a></li>
-              <li><a href="#">JavaScript</a></li>
+              <li *ngFor="let tag of project.tags">
+                <a href="#">◽️ {{ tag }}</a>
+              </li>
             </ul>
           </li>
         </ul>
