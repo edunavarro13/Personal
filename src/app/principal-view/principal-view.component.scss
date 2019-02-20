@@ -16,7 +16,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .card-personal {
@@ -43,7 +43,7 @@ body {
 .edu-initial {
     margin-left: 2vw;
     margin-right: 2vw;
-    max-width: 50vw;
+    width: 50vw;
     font-size: 1.5em;
     color: rgb(228, 228, 228);
     font-weight: bold;
@@ -56,18 +56,40 @@ body {
     border: 0.1vh solid rgb(151, 151, 151);
 }
 
+@media screen and (max-width: 600px) {
+    .card-personal {
+        flex-wrap: wrap;
+        width: 90vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    .edu-initial {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: 90vw;
+    }
+    .img-edu {
+        border-radius: 50%;
+        margin-left: 4vw;
+        margin-right: 4vw;
+        margin-top: 2vh;
+    }
+}
+
 // ------------ Botones ------------------------
 
 .section-buttons {
     overflow: hidden;
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
     background: rgba(255,255,255,1);
     background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(181,181,181,1) 100%);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(181,181,181,1)));
     background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(181,181,181,1) 100%);
     background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(181,181,181,1) 100%);
     background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(181,181,181,1) 100%);
-    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(181,181,181,1) 100%);
+    //background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(181,181,181,1) 100%);
+    background-image: url("../../assets/fondo1.png");
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b5b5b5', GradientType=1 );
 }
 
@@ -77,11 +99,12 @@ body {
     ====================================  */
 h1 {
   margin: 50px 0 0 0;
-  color: rgba(50,50,50,1);
+  //color: rgba(50,50,50,1);
+  color: rgb(223, 223, 223);
   text-align: center;
   text-shadow: 
-    1px 0px 0px rgba(35, 231, 214, 1),
-    -1px 0px 0px rgba(210, 17, 50, 1);
+    1px 0px 5px rgba(35, 231, 214, 1),
+    -1px 1.5px 5px rgba(210, 17, 50, 1);
   font-family: 'Ubuntu Condensed', sans-serif;
 }
 
@@ -208,9 +231,9 @@ section#main-menu ul li.selected {
     font-size: 24px;
     font-family: 'Orbitron', sans-serif;
 
-    text-shadow:
-        1px 0px 0px rgba(35, 231, 214, 1),
-        -1px 0px 0px rgba(210, 17, 50, 1);
+    text-shadow: 
+          1px 0px 5px rgba(35, 231, 214, 1),
+          -1px 1.5px 5px rgba(210, 17, 50, 1);
     position: absolute;
     top: -14px;
     background: transparent !important;
