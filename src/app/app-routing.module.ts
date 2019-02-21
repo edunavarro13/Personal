@@ -6,6 +6,7 @@ import { ContactViewComponent } from './contact-view/contact-view.component';
 
 const routes: Routes = [
   { path: 'home', component: PrincipalViewComponent },
+  { path: 'home#options', component: PrincipalViewComponent },
   { path: 'projects', component: ProjectViewComponent },
   { path: 'contact', component: ContactViewComponent },
   // { path: 'login', component: LoginViewComponent },

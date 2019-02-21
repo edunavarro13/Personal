@@ -1,0 +1,54 @@
+header {
+  height: 10vh;
+  background-image: url('../../assets/cabecera.png');
+  box-sizing: border-box;
+  border-bottom: 2px silver outset;
+  display: flex;
+  align-items: center;
+}
+
+
+// ------------- Boton volver ------------
+
+.link {
+  border: 1px solid #0bcdff;
+  border-radius: 8px;
+  color: #0bcdff;
+  cursor: pointer;
+  clear: both;
+  display: block;
+  font-size: 150%;
+  margin-left: 5vw;
+  //   margin: 0 auto 40px;
+  //   padding: 10px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  //top: 20px;
+  transition: all 500ms linear;
+  width: 160px;
+
+  &::after {
+    background-color: rgba(255, 255, 255, 0.4);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: none;
+    width: 0;
+  }
+
+  &:hover {
+    background-color: rgba(0, 130, 164, 0.8);
+    box-shadow: 0 0 10px 0 #0bcdff;
+    color: #fff;
+    text-decoration: none;
+
+    &::after {
+      background-color: rgba(255, 255, 255, 0);
+      transition: all 300ms ease-out;
+      width: 100%;
+    }
+  }
+}

@@ -1,4 +1,9 @@
+<app-header-view></app-header-view>
 <section class="section-project" *ngIf="projectArray">
+    <div class="title-page"><i class="material-icons title-icons">
+        work
+      </i>Proyectos</div>
+    <p class="title-line-divisor"></p>
   <div *ngFor="let project of projectArray">
     <div *ngIf="project.id % 2 !== 0" class="blog-card">
       <div class="meta">
