@@ -73,26 +73,75 @@ export class ObjectsService {
   }
 
   inicialiceLanguages() {
-    // Javascript
-    this.languagesArray.push({
-      id: 1,
-      name: "Javascript",
-      description: "Descripcion",
-      image: `'../../assets/lenguajes/javascript.png'`
-    });
     // HTML5
     this.languagesArray.push({
-      id: 2,
+      id: 1,
       name: "HTML5",
       description: "Descripcion",
       image: `'../../assets/lenguajes/html5.png'`
     });
     // CSS
     this.languagesArray.push({
-      id: 3,
+      id: 2,
       name: "CSS3",
       description: "Descripcion",
       image: `'../../assets/lenguajes/CSS3.png'`
+    });
+    // Javascript
+    this.languagesArray.push({
+      id: 3,
+      name: "Javascript",
+      description: "Descripcion",
+      image: `'../../assets/lenguajes/javascript.png'`
+    });
+    // ECM6
+    this.languagesArray.push({
+      id: 4,
+      name: "ECMAScript 6",
+      description: "Descripcion",
+      image: `'../../assets/lenguajes/ecmascript.png'`
+    });
+    // Typescript
+    this.languagesArray.push({
+      id: 5,
+      name: "Typescript",
+      description: "Descripcion",
+      image: `'../../assets/lenguajes/typescript.png'`
+    });
+    // Java
+    this.languagesArray.push({
+      id: 6,
+      name: "Java",
+      description: "Descripcion",
+      image: `'../../assets/lenguajes/java.png'`
+    });
+    // PHP
+    this.languagesArray.push({
+      id: 7,
+      name: "PHP",
+      description: "Descripcion",
+      image: `'../../assets/lenguajes/php.png'`
+    });
+    // C
+    this.languagesArray.push({
+      id: 8,
+      name: "C",
+      description: "Descripcion",
+      image: `'../../assets/lenguajes/c.png'`
+    });
+    // C++
+    this.languagesArray.push({
+      id: 9,
+      name: "C++",
+      description: "Descripcion",
+      image: `'../../assets/lenguajes/c++.png'`
+    });
+    // C#
+    this.languagesArray.push({
+      id: 10,
+      name: "C Sharp",
+      description: "Descripcion",
+      image: `'../../assets/lenguajes/csharp.png'`
     });
   }
 }

@@ -37,8 +37,12 @@ body {
 }
 
 .img-edu {
-    border-radius: 50%;
+    //border-radius: 50%;
     margin-left: 2vw;
+ 
+  clip-path: polygon(
+    50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+  );
 }
 
 .edu-initial {
@@ -94,7 +98,6 @@ body {
         width: 90vw;
     }
     .img-edu {
-        border-radius: 50%;
         margin-left: 4vw;
         margin-right: 4vw;
         margin-top: 2vh;
