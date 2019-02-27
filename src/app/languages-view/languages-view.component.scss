@@ -19,7 +19,6 @@
 }
 
 
-
 .title-line-divisor {
   height: 0.4vh;
   width: 80vw;
@@ -32,173 +31,32 @@
   margin-right: 1vw;
 }
 
-// Grid de hexagonos
-@import url(https://fonts.googleapis.com/css?family=Arapey:400italic);
-
 .grid-contact {
-  // width: 80vw;
-  min-height: 65vh;
-  // display: grid;
-  // grid-template-columns: 1fr 2fr;
-  // margin-bottom: 5vh;
-  // justify-items: center;
-  // background: #dedede;
-  -webkit-font-smoothing: antialiased;
-  min-width: 1200px;
+  width: 80vw;
+  font-size: 2em;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  justify-items: center;
+  align-items: center;
+  border: 1px black solid;
+  color: rgb(223, 223, 223);
 }
 
-.grid {
-  padding: 60px;
-  margin: 0 auto;
-  max-width: 1200px;
+.image-icon {
+  height: 25vh;
+  margin: 4px;
 }
 
-.grid--item {
-  background: #dedede;
-  position: relative;
-  margin-top: -90px;
-  margin-right: 5px;
-  margin-left: 5px;
-  width: calc(33.33% - 10px);
-  float: left;
-  //border-left: 4px solid #dedede;
-  //border-right: 4px solid #dedede;
-  transition: all 0.5s;
-
-  overflow: hidden;
-
-  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-
-  -webkit-shape-outside: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-
-  &:before {
-    display: block;
-    padding-top: 112.5%;
-    content: '';
-  }
-
-  &:nth-child(1),
-  &:nth-child(2) {
-    margin-top: 0;
-  }
-
-  &:nth-child(7n - 1),
-  &:nth-child(1) {
-    margin-left: 185px;
-  }
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
 }
 
-.img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  background-position: center center;
-  background-size: cover;
-
-  overflow: hidden;
-
-  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-
-  &:before,
-  &:after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    content: '';
-    opacity: 0;
-    transition: opacity 0.5s;
-  }
-
-  &:before {
-    background: rgba(purple, 0.25);
-  }
-
-  &:after {
-    background: linear-gradient(to top, transparent, rgba(black, 0.5), transparent);
-  }
-}
-
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-
-  opacity: 0;
-  text-align: center;
-  color: white;
-  will-change: transform;
-  backface-visibility: hidden;
-  transform: translate(-50%, -50%) scale(0.9);
-  transition: all 0.5s;
-
-  -webkit-shape-outside: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-
-  shape-outside: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-}
-
-h1,
-h2 {
-  font-family: 'Arapey';
-  font-style: italic;
-  font-weight: 400;
-}
-
-h1 {
-  margin-top: 90px;
-  text-align: center;
-  font-size: 56px;
-  color: #242424;
-}
-
-h2 {
-  font-size: 32px;
-
-  &:before,
-  &:after {
-    display: inline-block;
-    margin: 0 0.5em;
-    width: 0.75em;
-    height: 0.03em;
-    background: turquoise;
-    content: '';
-    vertical-align: middle;
-    transition: all 0.3s;
-  }
-}
-
-.desc {
-  margin: 1em 0 0;
-  font-family: 'ATC Overlook';
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 11px;
-  line-height: 1.5;
-  color: turquoise;
-}
-
-
-.grid--item:hover {
-
-  .img:before,
-  .img:after,
-  .container {
-    opacity: 1;
-  }
-
-  .container {
-    transform: translate(-50%, -50%) scale(1);
-  }
+a {
+  color: rgb(223, 223, 223);
 }
 
 @media screen and (max-width: 600px) {
@@ -206,30 +64,4 @@ h2 {
 		font-size: 2.8em;
 		min-height: 15vh;
   }
-
-  .grid-contact {
-    min-width: 100%;
-  }
-
-  .grid {
-    padding: 0;
-    margin: 0 auto;
-    min-width: 100%;
-  }
-
-  .grid--item {
-    margin-top: 0;
-
-    &:nth-child(7n - 1),
-    &:nth-child(1) {
-      margin-left: 18%;
-    }
-	}
-	h2 {
-		font-size: 1em;
-		&:before,
-  &:after {
-    margin: 0;
-  }
-	}
 }

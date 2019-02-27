@@ -77,71 +77,81 @@ export class ObjectsService {
     this.languagesArray.push({
       id: 1,
       name: "HTML5",
-      description: "Descripcion",
-      image: `'../../assets/lenguajes/html5.png'`
+      link: "https://es.wikipedia.org/wiki/HTML5",
+      projects: [this.projectArray[1], this.projectArray[2], this.projectArray[3], this.projectArray[4]],
+      image: '../../assets/lenguajes/html5.png'
     });
     // CSS
     this.languagesArray.push({
       id: 2,
       name: "CSS3",
-      description: "Descripcion",
-      image: `'../../assets/lenguajes/CSS3.png'`
+      link: "https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada",
+      projects: [this.projectArray[1], this.projectArray[2], this.projectArray[3], this.projectArray[4]],
+      image: '../../assets/lenguajes/CSS3.png'
     });
     // Javascript
     this.languagesArray.push({
       id: 3,
       name: "Javascript",
-      description: "Descripcion",
-      image: `'../../assets/lenguajes/javascript.png'`
+      link: "https://es.wikipedia.org/wiki/JavaScript",
+      projects: [this.projectArray[1], this.projectArray[2], this.projectArray[3], this.projectArray[4]],
+      image: '../../assets/lenguajes/javascript.png'
     });
     // ECM6
     this.languagesArray.push({
       id: 4,
       name: "ECMAScript 6",
-      description: "Descripcion",
-      image: `'../../assets/lenguajes/ecmascript.png'`
+      link: "https://es.wikipedia.org/wiki/JavaScript",
+      projects: [this.projectArray[1], this.projectArray[2], this.projectArray[3], this.projectArray[4]],
+      image: '../../assets/lenguajes/ecmascript.png'
     });
     // Typescript
     this.languagesArray.push({
       id: 5,
       name: "Typescript",
-      description: "Descripcion",
-      image: `'../../assets/lenguajes/typescript.png'`
+      link: "https://es.wikipedia.org/wiki/JavaScript",
+      projects: [this.projectArray[1], this.projectArray[2], this.projectArray[3], this.projectArray[4]],
+      image: '../../assets/lenguajes/typescript.png'
     });
     // Java
     this.languagesArray.push({
       id: 6,
       name: "Java",
-      description: "Descripcion",
-      image: `'../../assets/lenguajes/java.png'`
+      link: "https://es.wikipedia.org/wiki/JavaScript",
+      projects: [this.projectArray[0]],
+      image: '../../assets/lenguajes/java.png'
     });
-    // PHP
+    // C#
     this.languagesArray.push({
       id: 7,
-      name: "PHP",
-      description: "Descripcion",
-      image: `'../../assets/lenguajes/php.png'`
+      name: "C Sharp",
+      link: "https://es.wikipedia.org/wiki/JavaScript",
+      projects: [this.projectArray[0], this.projectArray[1]],
+      image: '../../assets/lenguajes/csharp.png'
     });
     // C
     this.languagesArray.push({
       id: 8,
       name: "C",
-      description: "Descripcion",
-      image: `'../../assets/lenguajes/c.png'`
+      link: "https://es.wikipedia.org/wiki/JavaScript",
+      projects: [],
+      image: '../../assets/lenguajes/c.png'
     });
     // C++
     this.languagesArray.push({
       id: 9,
       name: "C++",
-      description: "Descripcion",
-      image: `'../../assets/lenguajes/c++.png'`
+      link: "https://es.wikipedia.org/wiki/JavaScript",
+      projects: [],
+      image: '../../assets/lenguajes/c++.png'
     });
-    // C#
+    // PHP
     this.languagesArray.push({
       id: 10,
-      name: "C Sharp",
-      description: "Descripcion",
-      image: `'../../assets/lenguajes/csharp.png'`
+      name: "PHP",
+      link: "https://es.wikipedia.org/wiki/JavaScript",
+      projects: [],
+      image: '../../assets/lenguajes/php.png'
     });
   }
 }

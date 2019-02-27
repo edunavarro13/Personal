@@ -11,6 +11,7 @@ export interface Project {
 export interface Languages {
   id: number;
   name: string;
-  description: string;
+  link: string;
+  projects: Array<Project>;
   image: string;
 }

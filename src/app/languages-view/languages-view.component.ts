@@ -10,6 +10,7 @@ import { ObjectsService } from '../objects.service';
 export class LanguagesViewComponent implements OnInit {
 
   languagesArray: Array < Languages > = [] ;
+
   constructor(private objectsService: ObjectsService) { }
 
   ngOnInit() {

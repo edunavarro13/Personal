@@ -7,7 +7,6 @@ import { LanguagesViewComponent } from './languages-view/languages-view.componen
 
 const routes: Routes = [
   { path: 'home', component: PrincipalViewComponent },
-  { path: 'home#options', component: PrincipalViewComponent },
   { path: 'projects', component: ProjectViewComponent },
   { path: 'contact', component: ContactViewComponent },
   { path: 'tools', component: LanguagesViewComponent },
