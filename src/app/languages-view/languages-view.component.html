@@ -1,0 +1,18 @@
+<app-header-view></app-header-view>
+<section class="section-contact ">
+  <div class="title-page"><i class="material-icons title-icons">
+      build
+    </i>Herramientas usadas</div>
+  <p class="title-line-divisor"></p>
+  <div class="grid-contact">
+    <div class='grid'>
+      <div *ngFor="let language of languagesArray" class='grid--item'>
+        <div class='img' [style.backgroundImage]="'url('+ language.image +')'"></div>
+        <div class='container'>
+          <h2>{{language.name}}</h2>
+          <div class='desc'>Photo by Ales Krivec</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

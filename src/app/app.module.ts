@@ -7,6 +7,8 @@ import { PrincipalViewComponent } from './principal-view/principal-view.componen
 import { ProjectViewComponent } from './project-view/project-view.component';
 import { ContactViewComponent } from './contact-view/contact-view.component';
 import { HeaderViewComponent } from './header-view/header-view.component';
+import { LanguagesViewComponent } from './languages-view/languages-view.component';
+import { ObjectsService } from './objects.service';
 
 @NgModule({
   declarations: [
@@ -14,13 +16,14 @@ import { HeaderViewComponent } from './header-view/header-view.component';
     PrincipalViewComponent,
     ProjectViewComponent,
     ContactViewComponent,
-    HeaderViewComponent
+    HeaderViewComponent,
+    LanguagesViewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ObjectsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

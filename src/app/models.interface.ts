@@ -8,3 +8,9 @@ export interface Project {
     description: string;
     image: string;
   }
+export interface Languages {
+  id: number;
+  name: string;
+  description: string;
+  image: string;
+}
