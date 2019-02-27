@@ -4,12 +4,34 @@
       build
     </i>Herramientas usadas</div>
   <p class="title-line-divisor"></p>
-  <div class="grid-contact" *ngFor="let language of languagesArray">
-    <img class="image-icon" src="{{language.image}}">
-    <a href="{{ language.link }}" target="_blank">
+  <!-- 3 columnas en desktop -->
+  <div id="label-desktop" class="grid-contact">
+    <label></label>
+    <label class="cell-border">Enlace a Wikipedia</label>
+    <label class="cell-border">Proyectos</label>
+  </div>
+  <div id="div-desktop" class="grid-contact" *ngFor="let language of languagesArray">
+    <div class="cell-border">
+      <img class="image-icon" src="{{language.image}}">
+    </div>
+    <a class="cell-border" href="{{ language.link }}" target="_blank">
       {{language.name}}
     </a>
-    <div>
+    <div class="cell-border">
+      <ul>
+        <li *ngFor="let project of language.projects">
+          {{ project.name }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 1 columna en movil -->
+  <div id="label-mobile" class="grid-contact-mobile">
+    <div class="cell-border flex-cell">Proyectos</div>
+  </div>
+  <div id="div-mobile" class="grid-contact-mobile" *ngFor="let language of languagesArray">
+    <div class="cell-border flex-cell">
+      <img class="image-icon" src="{{language.image}}">
       <ul>
         <li *ngFor="let project of language.projects">
           {{ project.name }}

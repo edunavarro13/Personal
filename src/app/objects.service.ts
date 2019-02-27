@@ -101,7 +101,7 @@ export class ObjectsService {
     this.languagesArray.push({
       id: 4,
       name: "ECMAScript 6",
-      link: "https://es.wikipedia.org/wiki/JavaScript",
+      link: "https://es.wikipedia.org/wiki/ECMAScript",
       projects: [this.projectArray[1], this.projectArray[2], this.projectArray[3], this.projectArray[4]],
       image: '../../assets/lenguajes/ecmascript.png'
     });
@@ -109,7 +109,7 @@ export class ObjectsService {
     this.languagesArray.push({
       id: 5,
       name: "Typescript",
-      link: "https://es.wikipedia.org/wiki/JavaScript",
+      link: "https://es.wikipedia.org/wiki/TypeScript",
       projects: [this.projectArray[1], this.projectArray[2], this.projectArray[3], this.projectArray[4]],
       image: '../../assets/lenguajes/typescript.png'
     });
@@ -117,7 +117,7 @@ export class ObjectsService {
     this.languagesArray.push({
       id: 6,
       name: "Java",
-      link: "https://es.wikipedia.org/wiki/JavaScript",
+      link: "https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)",
       projects: [this.projectArray[0]],
       image: '../../assets/lenguajes/java.png'
     });
@@ -125,7 +125,7 @@ export class ObjectsService {
     this.languagesArray.push({
       id: 7,
       name: "C Sharp",
-      link: "https://es.wikipedia.org/wiki/JavaScript",
+      link: "https://es.wikipedia.org/wiki/C_Sharp",
       projects: [this.projectArray[0], this.projectArray[1]],
       image: '../../assets/lenguajes/csharp.png'
     });
@@ -133,7 +133,7 @@ export class ObjectsService {
     this.languagesArray.push({
       id: 8,
       name: "C",
-      link: "https://es.wikipedia.org/wiki/JavaScript",
+      link: "https://es.wikipedia.org/wiki/C_(lenguaje_de_programaci%C3%B3n)",
       projects: [],
       image: '../../assets/lenguajes/c.png'
     });
@@ -141,7 +141,7 @@ export class ObjectsService {
     this.languagesArray.push({
       id: 9,
       name: "C++",
-      link: "https://es.wikipedia.org/wiki/JavaScript",
+      link: "https://es.wikipedia.org/wiki/C%2B%2B",
       projects: [],
       image: '../../assets/lenguajes/c++.png'
     });
@@ -149,7 +149,7 @@ export class ObjectsService {
     this.languagesArray.push({
       id: 10,
       name: "PHP",
-      link: "https://es.wikipedia.org/wiki/JavaScript",
+      link: "https://es.wikipedia.org/wiki/PHP",
       projects: [],
       image: '../../assets/lenguajes/php.png'
     });

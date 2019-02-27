@@ -3,8 +3,9 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 90vh;
+  min-height: 85vh;
   background-image: url('../../assets/fondo1.png');
+  padding-bottom: 5vh;
 }
 
 .title-page {
@@ -38,7 +39,16 @@
   grid-template-columns: 2fr 1fr 2fr;
   justify-items: center;
   align-items: center;
-  border: 1px black solid;
+  color: rgb(223, 223, 223);
+}
+
+
+.grid-contact-mobile {
+  width: 90vw;
+  font-size: 2em;
+  display: grid;
+  justify-items: center;
+  align-items: center;
   color: rgb(223, 223, 223);
 }
 
@@ -59,9 +69,56 @@ a {
   color: rgb(223, 223, 223);
 }
 
+a:hover {
+  color: #0bcdff;
+}
+
+label {
+  text-shadow:
+    1px 0px 5px rgba(35, 231, 214, 1),
+    -1px 1.5px 5px rgba(210, 17, 50, 1);
+}
+
+.cell-border {
+  height: 100%;
+  width: 100%;
+  border: 2px outset #0bcdff;
+  text-align: center;
+}
+
+#div-mobile{
+  display: none;
+}
+#label-mobile{
+  display: none;
+}
+
+.flex-cell{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 @media screen and (max-width: 600px) {
   .title-page {
 		font-size: 2.8em;
 		min-height: 15vh;
+  }
+  #div-desktop {
+    display: none;
+  }
+  #label-desktop {
+    display: none;
+  }
+  #div-mobile {
+    display: block;
+  }
+  #label-mobile {
+    display: block;
+  }
+  .cell-border {
+    width: 90vw;
   }
 }
