@@ -9,6 +9,7 @@ import { ContactViewComponent } from './contact-view/contact-view.component';
 import { HeaderViewComponent } from './header-view/header-view.component';
 import { LanguagesViewComponent } from './languages-view/languages-view.component';
 import { ObjectsService } from './objects.service';
+import { CurriculumViewComponent } from './curriculum-view/curriculum-view.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ObjectsService } from './objects.service';
     ProjectViewComponent,
     ContactViewComponent,
     HeaderViewComponent,
-    LanguagesViewComponent
+    LanguagesViewComponent,
+    CurriculumViewComponent
   ],
   imports: [
     BrowserModule,
