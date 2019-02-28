@@ -80,10 +80,15 @@ label {
 }
 
 .cell-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   width: 100%;
-  border: 2px outset #0bcdff;
+  border: 2px outset #73d0df;
   text-align: center;
+  background-color: #8fd6e35e; /* For browsers that do not support gradients */
+    background-image: radial-gradient(#8fd6e35e, #76aeb85e, #3d5b615e); /* Standard syntax (must be last) */
 }
 
 #div-mobile{
