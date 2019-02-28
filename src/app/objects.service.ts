@@ -24,7 +24,7 @@ export class ObjectsService {
       tags: ["Java", "Android", "Android Studio", "C#"],
       resume: "Yeah",
       description: "Descripcion del proyecto Duack ira aqui en proximas implementaciones",
-      image: `'../../assets/duack.png'`
+      image: `'./assets/duack.png'`
     });
     // Proyecto GTT
     this.projectArray.push({
@@ -35,7 +35,7 @@ export class ObjectsService {
       tags: ["Javascript", "Typescript", "Angular", "C#", "HTML5", "CSS", "Visual Studio"],
       resume: "Yeah",
       description: "Descripcion del proyecto GTT ira aqui en proximas implementaciones",
-      image: `'../../assets/LogoGTT.jpg'`
+      image: `'./assets/LogoGTT.jpg'`
     });
     // Proyecto N1M
     this.projectArray.push({
@@ -46,7 +46,7 @@ export class ObjectsService {
       tags: ["Javascript", "Bootstrap", "Angular", "HTML", "CSS"],
       resume: "Yeah",
       description: "Descripcion del proyecto N1M ira aqui en proximas implementaciones",
-      image: `'../../assets/LogoN1M_App.png'`
+      image: `'./assets/LogoN1M_App.png'`
     });
     // Proyecto Trello
     this.projectArray.push({
@@ -57,7 +57,7 @@ export class ObjectsService {
       tags: ["Javascript", "Typescript", "Angular", "HTML", "CSS", "C#"],
       resume: "Yeah",
       description: "Descripcion del proyecto Trello ira aqui en proximas implementaciones",
-      image: `'../../assets/LogoN1M_App.png'`
+      image: `'./assets/LogoN1M_App.png'`
     });
     // Proyecto Peliculas
     this.projectArray.push({
@@ -68,7 +68,7 @@ export class ObjectsService {
       tags: ["Javascript", "Bootstrap", "Angular", "HTML", "CSS"],
       resume: "Yeah",
       description: "Descripcion del proyecto Peliculas ira aqui en proximas implementaciones",
-      image: `'../../assets/LogoN1M_App.png'`
+      image: `'./assets/LogoN1M_App.png'`
     });
   }
 
@@ -79,7 +79,7 @@ export class ObjectsService {
       name: "HTML5",
       link: "https://es.wikipedia.org/wiki/HTML5",
       projects: [this.projectArray[1], this.projectArray[2], this.projectArray[3], this.projectArray[4]],
-      image: '../../assets/lenguajes/html5.png'
+      image: './assets/lenguajes/html5.png'
     });
     // CSS
     this.languagesArray.push({
@@ -87,7 +87,7 @@ export class ObjectsService {
       name: "CSS3",
       link: "https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada",
       projects: [this.projectArray[1], this.projectArray[2], this.projectArray[3], this.projectArray[4]],
-      image: '../../assets/lenguajes/CSS3.png'
+      image: './assets/lenguajes/CSS3.png'
     });
     // Javascript
     this.languagesArray.push({
@@ -95,7 +95,7 @@ export class ObjectsService {
       name: "Javascript",
       link: "https://es.wikipedia.org/wiki/JavaScript",
       projects: [this.projectArray[1], this.projectArray[2], this.projectArray[3], this.projectArray[4]],
-      image: '../../assets/lenguajes/javascript.png'
+      image: './assets/lenguajes/javascript.png'
     });
     // ECM6
     this.languagesArray.push({
@@ -103,7 +103,7 @@ export class ObjectsService {
       name: "ECMAScript 6",
       link: "https://es.wikipedia.org/wiki/ECMAScript",
       projects: [this.projectArray[1], this.projectArray[2], this.projectArray[3], this.projectArray[4]],
-      image: '../../assets/lenguajes/ecmascript.png'
+      image: './assets/lenguajes/ecmascript.png'
     });
     // Typescript
     this.languagesArray.push({
@@ -111,7 +111,7 @@ export class ObjectsService {
       name: "Typescript",
       link: "https://es.wikipedia.org/wiki/TypeScript",
       projects: [this.projectArray[1], this.projectArray[2], this.projectArray[3], this.projectArray[4]],
-      image: '../../assets/lenguajes/typescript.png'
+      image: './assets/lenguajes/typescript.png'
     });
     // Java
     this.languagesArray.push({
@@ -119,7 +119,7 @@ export class ObjectsService {
       name: "Java",
       link: "https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)",
       projects: [this.projectArray[0]],
-      image: '../../assets/lenguajes/java.png'
+      image: './assets/lenguajes/java.png'
     });
     // C#
     this.languagesArray.push({
@@ -127,7 +127,7 @@ export class ObjectsService {
       name: "C Sharp",
       link: "https://es.wikipedia.org/wiki/C_Sharp",
       projects: [this.projectArray[0], this.projectArray[1]],
-      image: '../../assets/lenguajes/csharp.png'
+      image: './assets/lenguajes/csharp.png'
     });
     // C
     this.languagesArray.push({
@@ -135,7 +135,7 @@ export class ObjectsService {
       name: "C",
       link: "https://es.wikipedia.org/wiki/C_(lenguaje_de_programaci%C3%B3n)",
       projects: [],
-      image: '../../assets/lenguajes/c.png'
+      image: './assets/lenguajes/c.png'
     });
     // C++
     this.languagesArray.push({
@@ -143,7 +143,7 @@ export class ObjectsService {
       name: "C++",
       link: "https://es.wikipedia.org/wiki/C%2B%2B",
       projects: [],
-      image: '../../assets/lenguajes/c++.png'
+      image: './assets/lenguajes/c++.png'
     });
     // PHP
     this.languagesArray.push({
@@ -151,7 +151,7 @@ export class ObjectsService {
       name: "PHP",
       link: "https://es.wikipedia.org/wiki/PHP",
       projects: [],
-      image: '../../assets/lenguajes/php.png'
+      image: './assets/lenguajes/php.png'
     });
   }
 }
