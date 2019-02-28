@@ -20,10 +20,10 @@ export class ObjectsService {
       id: 1,
       name: 'Duack',
       author: 'Universidad de Alicante',
-      date: 'Hoy',
-      tags: ["Java", "Android", "Android Studio", "C#"],
-      resume: "Yeah",
-      description: "Descripcion del proyecto Duack ira aqui en proximas implementaciones",
+      date: '06/2018',
+      tags: ["Java", "Android", "Android Studio", "C#", "Visual studio", "IBM Watson", "Localtunnel"],
+      resume: "Chatbot de turismo",
+      description: "dUAck es un chatbot de turismo que permite comprobar qué lugares de interés turístico hay cerca de ti. Fue mi TFG.",
       image: `'./assets/duack.png'`
     });
     // Proyecto GTT
@@ -35,17 +35,17 @@ export class ObjectsService {
       tags: ["Javascript", "Typescript", "Angular", "C#", "HTML5", "CSS", "Visual Studio"],
       resume: "Yeah",
       description: "Descripcion del proyecto GTT ira aqui en proximas implementaciones",
-      image: `'./assets/LogoGTT.jpg'`
+      image: `'./assets/GTT.jpg'`
     });
     // Proyecto N1M
     this.projectArray.push({
       id: 3,
       name: 'N1M',
       author: 'Universidad de Alicante',
-      date: 'Hoy',
+      date: '04/2017',
       tags: ["Javascript", "Bootstrap", "Angular", "HTML", "CSS"],
-      resume: "Yeah",
-      description: "Descripcion del proyecto N1M ira aqui en proximas implementaciones",
+      resume: "Varias apps contra la violencia de género",
+      description: "N1M ayuda a prevenir y concienciar sobre la violencia de género y para realizar llamadas de auxilio en caso de necesidad.",
       image: `'./assets/LogoN1M_App.png'`
     });
     // Proyecto Trello
@@ -57,7 +57,7 @@ export class ObjectsService {
       tags: ["Javascript", "Typescript", "Angular", "HTML", "CSS", "C#"],
       resume: "Yeah",
       description: "Descripcion del proyecto Trello ira aqui en proximas implementaciones",
-      image: `'./assets/LogoN1M_App.png'`
+      image: `'./assets/trello.jpg'`
     });
     // Proyecto Peliculas
     this.projectArray.push({
@@ -68,7 +68,7 @@ export class ObjectsService {
       tags: ["Javascript", "Bootstrap", "Angular", "HTML", "CSS"],
       resume: "Yeah",
       description: "Descripcion del proyecto Peliculas ira aqui en proximas implementaciones",
-      image: `'./assets/LogoN1M_App.png'`
+      image: `'./assets/peliculas.jpg'`
     });
   }
 
