@@ -1,0 +1,46 @@
+.section-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 90vh;
+    background-image: url('../../assets/fondo1.png');
+  }
+  
+  .title-page {
+      font-size: 4em;
+      height: 10vh;
+      width: 100vw;
+      color: rgb(223, 223, 223);
+    text-align: center;
+    text-shadow: 
+      1px 0px 5px rgba(35, 231, 214, 1),
+      -1px 1.5px 5px rgba(210, 17, 50, 1);
+  }
+  
+  .grid-contact {
+      width: 80vw;
+      min-height: 65vh;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      margin-bottom: 5vh;
+      justify-items: center;
+  }
+  
+  .title-line-divisor {
+      height: 0.4vh;
+      width: 80vw;
+      background-color: silver;
+      border: 0.1vh solid rgb(151, 151, 151);
+  }
+  
+  .title-icons {
+      font-size: 0.8em;
+      margin-right: 1vw;
+  }
+  
+  @media screen and (max-width: 600px) {
+      .grid-contact {
+          grid-template-columns: 1fr;
+      }
+  }

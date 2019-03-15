@@ -10,6 +10,7 @@ import { HeaderViewComponent } from './header-view/header-view.component';
 import { LanguagesViewComponent } from './languages-view/languages-view.component';
 import { ObjectsService } from './objects.service';
 import { CurriculumViewComponent } from './curriculum-view/curriculum-view.component';
+import { DescriptionViewComponent } from './description-view/description-view.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CurriculumViewComponent } from './curriculum-view/curriculum-view.compo
     ContactViewComponent,
     HeaderViewComponent,
     LanguagesViewComponent,
-    CurriculumViewComponent
+    CurriculumViewComponent,
+    DescriptionViewComponent
   ],
   imports: [
     BrowserModule,
