@@ -6,17 +6,16 @@
   <p class="title-line-divisor"></p>
   <!-- 3 columnas en desktop -->
   <div id="label-desktop" class="grid-contact">
-    <label></label>
-    <label class="cell-border">Enlace a Wikipedia</label>
+    <label class="cell-border">Nombre</label>
     <label class="cell-border">Proyectos</label>
   </div>
   <div id="div-desktop" class="grid-contact" *ngFor="let language of languagesArray">
     <div class="cell-border">
       <img class="image-icon" src="{{language.image}}">
+      <a href="{{ language.link }}" target="_blank">
+        {{language.name}}
+      </a>
     </div>
-    <a class="cell-border" href="{{ language.link }}" target="_blank">
-      {{language.name}}
-    </a>
     <div class="cell-border">
       <ul>
         <li *ngFor="let project of language.projects">

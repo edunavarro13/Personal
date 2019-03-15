@@ -59,9 +59,20 @@ export class ObjectsService {
       description: "Descripcion del proyecto Trello ira aqui en proximas implementaciones",
       image: `'./assets/trello.jpg'`
     });
-    // Proyecto Peliculas
+    // Proyecto Destroy Stones
     this.projectArray.push({
       id: 5,
+      name: 'Destroy stones',
+      author: 'Curso edx',
+      date: '03/2019',
+      tags: ["C#", "Unity"],
+      resume: "Videojuego en Unity",
+      description: "Videojuego que consiste en destruir piedras que van saliendo en pantalla para conseguir la máxima puntuación posible.",
+      image: `'./assets/destroyStones.png'`
+    });
+    // Proyecto Peliculas
+    this.projectArray.push({
+      id: 6,
       name: 'Proyecto películas',
       author: 'Bootcamp Geekshubs',
       date: 'Hoy',
