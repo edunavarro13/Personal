@@ -18,7 +18,7 @@ export class ObjectsService {
      // Proyecto Duack
      this.projectArray.push({
       id: 1,
-      name: 'Duack',
+      name: 'dUAck',
       author: 'Universidad de Alicante',
       date: '06/2018',
       tags: ["Java", "Android", "Android Studio", "C#", "Visual studio", "IBM Watson", "Ngrok"],
@@ -32,7 +32,7 @@ export class ObjectsService {
       name: 'Proyecto GTT',
       author: 'Bootcamp Geekshubs',
       date: '02/2019',
-      tags: ["HTML5", "CSS", "Javascript", "Typescript", "Angular", "C#", "Visual Studio"],
+      tags: ["HTML5", "CSS", "Javascript", "ECM6", "Typescript", "Angular", "C#", "Visual Studio"],
       resume: "Gestión de certificados",
       description: "Proyecto que permite gestionar certificados digitales y subir avisos a Jira cuando alguno de ellos está cercano a caducar.",
       image: `'./assets/GTT.jpg'`
@@ -54,7 +54,7 @@ export class ObjectsService {
       name: 'Trello',
       author: 'Bootcamp Geekshubs',
       date: '01/2019',
-      tags: ["HTML5", "CSS", "Javascript", "Typescript", "Angular", "C#"],
+      tags: ["HTML5", "CSS", "Javascript", "ECM6", "Typescript", "Angular"],
       resume: "Tablero de tareas",
       description: "Proyecto que permite crear y gestionar listas y tareas, similar a Trello.",
       image: `'./assets/trello.jpg'`
@@ -76,7 +76,7 @@ export class ObjectsService {
       name: 'Proyecto películas',
       author: 'Bootcamp Geekshubs',
       date: '01/2019',
-      tags: ["HTML5", "CSS", "Bootstrap", "Javascript", "Typescript", "Angular", "C#"],
+      tags: ["HTML5", "CSS", "Bootstrap", "Javascript", "ECM6", "Typescript", "Angular"],
       resume: "Visor de películas",
       description: "Proyecto que permite visualizar las películas más populares actualmente.",
       image: `'./assets/peliculas.jpg'`
@@ -89,7 +89,7 @@ export class ObjectsService {
       id: 1,
       name: "HTML5",
       link: "https://es.wikipedia.org/wiki/HTML5",
-      projects: [this.projectArray[1], this.projectArray[2], this.projectArray[3], this.projectArray[4]],
+      projects: [this.projectArray[1], this.projectArray[2], this.projectArray[3], this.projectArray[5]],
       image: './assets/lenguajes/html5.png'
     });
     // CSS
@@ -97,7 +97,7 @@ export class ObjectsService {
       id: 2,
       name: "CSS3",
       link: "https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada",
-      projects: [this.projectArray[1], this.projectArray[2], this.projectArray[3], this.projectArray[4]],
+      projects: [this.projectArray[1], this.projectArray[2], this.projectArray[3], this.projectArray[5]],
       image: './assets/lenguajes/CSS3.png'
     });
     // Javascript
@@ -105,7 +105,7 @@ export class ObjectsService {
       id: 3,
       name: "Javascript",
       link: "https://es.wikipedia.org/wiki/JavaScript",
-      projects: [this.projectArray[1], this.projectArray[2], this.projectArray[3], this.projectArray[4]],
+      projects: [this.projectArray[1], this.projectArray[2], this.projectArray[3], this.projectArray[5]],
       image: './assets/lenguajes/javascript.png'
     });
     // ECM6
@@ -113,7 +113,7 @@ export class ObjectsService {
       id: 4,
       name: "ECMAScript 6",
       link: "https://es.wikipedia.org/wiki/ECMAScript",
-      projects: [this.projectArray[1], this.projectArray[2], this.projectArray[3], this.projectArray[4]],
+      projects: [this.projectArray[1], this.projectArray[3], this.projectArray[5]],
       image: './assets/lenguajes/ecmascript.png'
     });
     // Typescript
@@ -121,7 +121,7 @@ export class ObjectsService {
       id: 5,
       name: "Typescript",
       link: "https://es.wikipedia.org/wiki/TypeScript",
-      projects: [this.projectArray[1], this.projectArray[2], this.projectArray[3], this.projectArray[4]],
+      projects: [this.projectArray[1], this.projectArray[3], this.projectArray[5]],
       image: './assets/lenguajes/typescript.png'
     });
     // Java
@@ -137,7 +137,7 @@ export class ObjectsService {
       id: 7,
       name: "C Sharp",
       link: "https://es.wikipedia.org/wiki/C_Sharp",
-      projects: [this.projectArray[0], this.projectArray[1]],
+      projects: [this.projectArray[0], this.projectArray[1], this.projectArray[4]],
       image: './assets/lenguajes/csharp.png'
     });
     // C
