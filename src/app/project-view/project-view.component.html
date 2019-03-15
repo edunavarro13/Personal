@@ -4,7 +4,20 @@
         work
       </i>Proyectos</div>
     <p class="title-line-divisor"></p>
-  <div *ngFor="let project of projectArray">
+    <div class="filter-style">
+      <label class="right-margin">Filtrar por lenguajes:</label>
+      <select class="filter-select" (change)="filterChange($event)"> -->
+        <option value="Todos">Todos</option>
+        <option value="HTML5">HTML5</option>
+        <option value="CSS">CSS</option>
+        <option value="Javascript">Javascript</option>
+        <option value="ECM6">ECM6</option>
+        <option value="Typescript">Typescript</option>
+        <option value="Java">Java</option>
+        <option value="C#">C#</option>
+      </select>
+    </div>
+  <div *ngFor="let project of projectArrayAux">
     <div *ngIf="project.id % 2 !== 0" class="blog-card">
       <div class="meta">
         <div class="photo" [style.backgroundImage]="'url('+ project.image +')'"></div>

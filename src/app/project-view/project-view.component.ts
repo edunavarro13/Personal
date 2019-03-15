@@ -15,11 +15,30 @@ import { ObjectsService } from '../objects.service';
 export class ProjectViewComponent implements OnInit {
 
   projectArray: Array < Project > = [] ;
+  projectArrayAux: Array < Project > = [] ;
 
   constructor(private objectsService: ObjectsService )  {}
 
   ngOnInit() {
     this.projectArray = this.objectsService.projectArray;
+    this.projectArrayAux = this.projectArray;
+  }
+
+  filterChange(ev) {
+    let filter: string = ev.target.value;
+    if(filter === "Todos") {
+      this.projectArrayAux = this.projectArray;
+    }
+    else {
+      this.projectArrayAux = [];
+      for(let project of this.projectArray) {
+        for (let tag of project.tags) {
+          if(tag === filter) {
+            this.projectArrayAux.push(project);
+          }
+        }
+      }
+    }
   }
 
 }
