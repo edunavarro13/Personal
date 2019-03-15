@@ -21,9 +21,9 @@ export class ObjectsService {
       name: 'Duack',
       author: 'Universidad de Alicante',
       date: '06/2018',
-      tags: ["Java", "Android", "Android Studio", "C#", "Visual studio", "IBM Watson", "Localtunnel"],
+      tags: ["Java", "Android", "Android Studio", "C#", "Visual studio", "IBM Watson", "Ngrok"],
       resume: "Chatbot de turismo",
-      description: "dUAck es un chatbot de turismo que permite comprobar qué lugares de interés turístico hay cerca de ti. Fue mi TFG.",
+      description: "Es un chatbot de turismo que permite comprobar qué lugares de interés turístico hay cerca de ti. Fue mi TFG.",
       image: `'./assets/duack.png'`
     });
     // Proyecto GTT
@@ -31,10 +31,10 @@ export class ObjectsService {
       id: 2,
       name: 'Proyecto GTT',
       author: 'Bootcamp Geekshubs',
-      date: 'Hoy',
-      tags: ["Javascript", "Typescript", "Angular", "C#", "HTML5", "CSS", "Visual Studio"],
-      resume: "Yeah",
-      description: "Descripcion del proyecto GTT ira aqui en proximas implementaciones",
+      date: '02/2019',
+      tags: ["HTML5", "CSS", "Javascript", "Typescript", "Angular", "C#", "Visual Studio"],
+      resume: "Gestión de certificados",
+      description: "Proyecto que permite gestionar certificados digitales y subir avisos a Jira cuando alguno de ellos está cercano a caducar.",
       image: `'./assets/GTT.jpg'`
     });
     // Proyecto N1M
@@ -43,7 +43,7 @@ export class ObjectsService {
       name: 'N1M',
       author: 'Universidad de Alicante',
       date: '04/2017',
-      tags: ["Javascript", "Bootstrap", "Angular", "HTML", "CSS"],
+      tags: ["HTML", "CSS", "Bootstrap", "Javascript", "Angular"],
       resume: "Varias apps contra la violencia de género",
       description: "N1M ayuda a prevenir y concienciar sobre la violencia de género y para realizar llamadas de auxilio en caso de necesidad.",
       image: `'./assets/LogoN1M_App.png'`
@@ -53,10 +53,10 @@ export class ObjectsService {
       id: 4,
       name: 'Trello',
       author: 'Bootcamp Geekshubs',
-      date: 'Hoy',
-      tags: ["Javascript", "Typescript", "Angular", "HTML", "CSS", "C#"],
-      resume: "Yeah",
-      description: "Descripcion del proyecto Trello ira aqui en proximas implementaciones",
+      date: '01/2019',
+      tags: ["HTML5", "CSS", "Javascript", "Typescript", "Angular", "C#"],
+      resume: "Tablero de tareas",
+      description: "Proyecto que permite crear y gestionar listas y tareas, similar a Trello.",
       image: `'./assets/trello.jpg'`
     });
     // Proyecto Destroy Stones
@@ -75,10 +75,10 @@ export class ObjectsService {
       id: 6,
       name: 'Proyecto películas',
       author: 'Bootcamp Geekshubs',
-      date: 'Hoy',
-      tags: ["Javascript", "Bootstrap", "Angular", "HTML", "CSS"],
-      resume: "Yeah",
-      description: "Descripcion del proyecto Peliculas ira aqui en proximas implementaciones",
+      date: '01/2019',
+      tags: ["HTML5", "CSS", "Bootstrap", "Javascript", "Typescript", "Angular", "C#"],
+      resume: "Visor de películas",
+      description: "Proyecto que permite visualizar las películas más populares actualmente.",
       image: `'./assets/peliculas.jpg'`
     });
   }
