@@ -18,13 +18,13 @@
       -1px 1.5px 5px rgba(210, 17, 50, 1);
   }
   
-  .grid-contact {
-      width: 80vw;
+  .flex-description {
+      width: 90vw;
       min-height: 65vh;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
+      display: flex;
       margin-bottom: 5vh;
-      justify-items: center;
+      justify-content: center;
+      align-items: center;
   }
   
   .title-line-divisor {
@@ -38,9 +38,29 @@
       font-size: 0.8em;
       margin-right: 1vw;
   }
+
+  .image-icon {
+      width: 30vw;
+  }
+
+  .detail-project {
+      min-width: 40vw;
+      max-width: 60vw;
+      margin: 20px;
+      box-sizing: border-box;
+      font-size: 1.8em;
+      color: rgb(223, 223, 223);
+  }
   
   @media screen and (max-width: 600px) {
-      .grid-contact {
-          grid-template-columns: 1fr;
+      .flex-description {
+        flex-wrap: wrap;
+      }
+      .image-icon {
+        width: 80vw;
+      }
+      .detail-project {
+        margin: 5px;
+        font-size: 1.5em;
       }
   }

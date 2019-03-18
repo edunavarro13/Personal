@@ -52,3 +52,9 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .link {
+    font-size: 120%;
+  }
+}

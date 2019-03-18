@@ -30,14 +30,13 @@ export class ProjectViewComponent implements OnInit {
       this.projectArrayAux = this.projectArray;
     }
     else {
-      this.projectArrayAux = [];
-      for(let project of this.projectArray) {
-        for (let tag of project.tags) {
+      this.projectArrayAux = this.projectArray.filter( elem => {
+        for (let tag of elem.tags) {
           if(tag === filter) {
-            this.projectArrayAux.push(project);
+            return elem;
           }
         }
-      }
+      });
     }
   }
 

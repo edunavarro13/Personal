@@ -7,6 +7,7 @@ export interface Project {
     resume: string;
     description: string;
     image: string;
+    detail: Array<string>;
   }
 export interface Languages {
   id: number;

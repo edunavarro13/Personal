@@ -9,6 +9,36 @@ export class ObjectsService {
   languagesArray: Array<Languages> = [];
   projectArray: Array<Project> = [];
 
+  detailDuack: Array<string> = [
+  `dUAck es un proyecto que realicé como mi trabajo de fin de grado en la Universidad de Alicante.`, 
+  `Es una aplicación móvil Android con dos funciones principales:`,
+      `1) Si estás haciendo turismo en un pueblo o ciudad y quieres saber qué lugares puedes visitar, dUAck te 
+      permite saber qué lugares de interés turístico hay cerca de tu ubicación actual en un rango modificable por 
+      el usuario.`,
+      `2) Si quieres viajar a un pueblo o ciudad, te permite saber qué lugares de interés turístico hay allí para 
+      planificar mejor tu viaje.`,
+  ];
+
+  detailGTT: Array<string> = [];
+
+  detailN1M: Array<string> = [];
+
+  detailTrello: Array<string> = [
+    `ProyectoTrello es un ToDo List que te permite crear listas y, en ellas, crear tareas simulando un 
+    tablero Kanban online. Los datos de listas y tareas están asignadas a un usuario particular mediante una API, 
+    por lo que tendrá primero que registrarse y posteriormente iniciar sesión con ese usuario para poder empezar 
+    a usar el tablero.`
+  ];
+
+  detailDestroyStones: Array<string> = [
+  `Destroy Stones es un proyecto que realicé en el curso online de Introducción al desarrollo de videojuegos con 
+  Unity de la Universidad Politécnica de Valencia.`,
+  `Es un juego para ordenador que va lanzando piedras que pasan por la pantalla. El jugador ha de pulsar encima 
+  de las piedras para destruirlas y ganar puntos.`
+  ];
+
+  detailPeliculas: Array<string> = [];
+
   constructor() { 
     this.inicialiceProjects();
     this.inicialiceLanguages();
@@ -24,7 +54,8 @@ export class ObjectsService {
       tags: ["Java", "Android", "Android Studio", "C#", "Visual studio", "IBM Watson", "Ngrok"],
       resume: "Chatbot de turismo",
       description: "Es un chatbot de turismo que permite comprobar qué lugares de interés turístico hay cerca de ti. Fue mi TFG.",
-      image: `'./assets/duack.png'`
+      image: `./assets/duack.png`,
+      detail: this.detailDuack,
     });
     // Proyecto GTT
     this.projectArray.push({
@@ -35,7 +66,8 @@ export class ObjectsService {
       tags: ["HTML5", "CSS", "Javascript", "ECM6", "Typescript", "Angular", "C#", "Visual Studio"],
       resume: "Gestión de certificados",
       description: "Proyecto que permite gestionar certificados digitales y subir avisos a Jira cuando alguno de ellos está cercano a caducar.",
-      image: `'./assets/GTT.jpg'`
+      image: `./assets/GTT.jpg`,
+      detail: this.detailGTT,
     });
     // Proyecto N1M
     this.projectArray.push({
@@ -46,7 +78,8 @@ export class ObjectsService {
       tags: ["HTML", "CSS", "Bootstrap", "Javascript", "Angular"],
       resume: "Varias apps contra la violencia de género",
       description: "N1M ayuda a prevenir y concienciar sobre la violencia de género y para realizar llamadas de auxilio en caso de necesidad.",
-      image: `'./assets/LogoN1M_App.png'`
+      image: `./assets/LogoN1M_App.png`,
+      detail: this.detailN1M,
     });
     // Proyecto Trello
     this.projectArray.push({
@@ -57,7 +90,8 @@ export class ObjectsService {
       tags: ["HTML5", "CSS", "Javascript", "ECM6", "Typescript", "Angular"],
       resume: "Tablero de tareas",
       description: "Proyecto que permite crear y gestionar listas y tareas, similar a Trello.",
-      image: `'./assets/trello.jpg'`
+      image: `./assets/trello.jpg`,
+      detail: this.detailTrello,
     });
     // Proyecto Destroy Stones
     this.projectArray.push({
@@ -68,7 +102,8 @@ export class ObjectsService {
       tags: ["C#", "Unity"],
       resume: "Videojuego en Unity",
       description: "Videojuego que consiste en destruir piedras que van saliendo en pantalla para conseguir la máxima puntuación posible.",
-      image: `'./assets/destroyStones.png'`
+      image: `./assets/destroyStones.png`,
+      detail: this.detailDestroyStones,
     });
     // Proyecto Peliculas
     this.projectArray.push({
@@ -79,7 +114,8 @@ export class ObjectsService {
       tags: ["HTML5", "CSS", "Bootstrap", "Javascript", "ECM6", "Typescript", "Angular"],
       resume: "Visor de películas",
       description: "Proyecto que permite visualizar las películas más populares actualmente.",
-      image: `'./assets/peliculas.jpg'`
+      image: `./assets/peliculas.jpg`,
+      detail: this.detailPeliculas,
     });
   }
 

@@ -4,6 +4,12 @@
       account_circle
     </i>{{ projectActual.name }}</div>
   <p class="title-line-divisor"></p>
-  <div class="grid-contact">
+  <div class="flex-description">
+    <img class="image-icon" src="{{projectActual.image}}">
+    <div class="detail-project">
+      <div *ngFor="let chain of projectActual.detail">
+        {{chain}}<br><br>
+      </div>
+    </div>
   </div>
 </section>
