@@ -56,6 +56,8 @@ export class ObjectsService {
       description: "Es un chatbot de turismo que permite comprobar qué lugares de interés turístico hay cerca de ti. Fue mi TFG.",
       image: `./assets/duack.png`,
       detail: this.detailDuack,
+      github: "https://github.com/edunavarro13/ChatbotTurismo",
+      bitbucket: "",
     });
     // Proyecto GTT
     this.projectArray.push({
@@ -68,6 +70,8 @@ export class ObjectsService {
       description: "Proyecto que permite gestionar certificados digitales y subir avisos a Jira cuando alguno de ellos está cercano a caducar.",
       image: `./assets/GTT.jpg`,
       detail: this.detailGTT,
+      github: "https://github.com/edunavarro13/GTTCertificate",
+      bitbucket: "",
     });
     // Proyecto N1M
     this.projectArray.push({
@@ -75,11 +79,13 @@ export class ObjectsService {
       name: 'N1M',
       author: 'Universidad de Alicante',
       date: '04/2017',
-      tags: ["HTML", "CSS", "Bootstrap", "Javascript", "Angular"],
+      tags: ["HTML5", "CSS", "Bootstrap", "Javascript", "Angular"],
       resume: "Varias apps contra la violencia de género",
       description: "N1M ayuda a prevenir y concienciar sobre la violencia de género y para realizar llamadas de auxilio en caso de necesidad.",
       image: `./assets/LogoN1M_App.png`,
       detail: this.detailN1M,
+      github: "",
+      bitbucket: "https://bitbucket.org/jorge3ppss/taes2017/src/master/",
     });
     // Proyecto Trello
     this.projectArray.push({
@@ -92,6 +98,8 @@ export class ObjectsService {
       description: "Proyecto que permite crear y gestionar listas y tareas, similar a Trello.",
       image: `./assets/trello.jpg`,
       detail: this.detailTrello,
+      github: "https://github.com/edunavarro13/ProyectoTrello",
+      bitbucket: "",
     });
     // Proyecto Destroy Stones
     this.projectArray.push({
@@ -104,6 +112,8 @@ export class ObjectsService {
       description: "Videojuego que consiste en destruir piedras que van saliendo en pantalla para conseguir la máxima puntuación posible.",
       image: `./assets/destroyStones.png`,
       detail: this.detailDestroyStones,
+      github: "https://github.com/edunavarro13/UnityDestroyStones",
+      bitbucket: "",
     });
     // Proyecto Peliculas
     this.projectArray.push({
@@ -116,6 +126,8 @@ export class ObjectsService {
       description: "Proyecto que permite visualizar las películas más populares actualmente.",
       image: `./assets/peliculas.jpg`,
       detail: this.detailPeliculas,
+      github: "https://github.com/edunavarro13/APIAngular",
+      bitbucket: "",
     });
   }
 

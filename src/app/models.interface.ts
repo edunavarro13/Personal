@@ -8,6 +8,8 @@ export interface Project {
     description: string;
     image: string;
     detail: Array<string>;
+    github: string;
+    bitbucket: string;
   }
 export interface Languages {
   id: number;
