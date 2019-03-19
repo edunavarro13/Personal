@@ -10,6 +10,7 @@ export interface Project {
     detail: Array<string>;
     github: string;
     bitbucket: string;
+    demo: string;
   }
 export interface Languages {
   id: number;

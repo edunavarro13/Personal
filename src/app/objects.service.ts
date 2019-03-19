@@ -19,9 +19,37 @@ export class ObjectsService {
       planificar mejor tu viaje.`,
   ];
 
-  detailGTT: Array<string> = [];
+  // Aun no esta subido
+  detailGTT: Array<string> = [
+    `Proyecto GTT es el proyecto final que realicé en el bootcamp para full stack developers realizado por 
+    Geekshubs. Es un programa que permite a un usuario previamente registrado, gestionar certificados digitales en
+    formato pfx o p12. Además, permite alertar en Jira de los certificados que están a punto de caducar.`,
+    `Los certificados pueden estar en 4 estados: `,
+    `1) Activo (color verde): El certificado no está caducado ni cerca de hacerlo.`,
+    `2) Caducado (color rojo): El certificado ya está caducado, por lo que saldrá un aviso de que habría que 
+    eliminarlo.`,
+    `3) Alertado (color amarillo): El certificado está a menos de 1 mes de caducar, por lo que saldrá un aviso de 
+    que habría que subirlo a Jira.`,
+    `4) Subido (color violeta): El certificado está a menos de 1 mes de caducar pero ya se ha subido una 
+    advertencia a Jira.`
+  ];
 
-  detailN1M: Array<string> = [];
+  // Aun no esta subido
+  detailN1M: Array<string> = [
+    `N1M (Ni una más) es un proyecto que realicé para una asignatura en el grado de ingeniería informática. Consiste
+    en una serie de programas que intentan prevenir, asistir y concienciar a la sociedad sobre la violencia de 
+    género. Hay 4 programas diferentes, 3 para el móvil y 1 para ordenador:`,
+    `1) N1M (Asistencia): pensado para conocidos o vecinos. Reciben las alertas de la víctima, así como su 
+    ubicación.`,
+    `2) Semáforo (Concienciación): Test realizado en la UA que sirve para que la mujer que lo realice sepa si está
+    siendo víctima de maltrato o, en caso de hacerlo un hombre, para saber si se está comportanto como un 
+    maltratador, concienciando a los usuarios.`,
+    `3) Notas (Prevención): App oculta como si fuera una aplicación de Notas. Sistema de alertas dependiendo el 
+    grado del peligro y apartado de noticias relacionadas con la violencia de género.`,
+    `4) Servidor (Prevención): Aplicación de escritorio que tendría que usar la policía. Recoge las alertas 
+    enviadas por la App de Notas para que la policía tenga la información rápido y pueda enviar ayuda de manera 
+    inmediata.`
+  ];
 
   detailTrello: Array<string> = [
     `ProyectoTrello es un ToDo List que te permite crear listas y, en ellas, crear tareas simulando un 
@@ -37,7 +65,12 @@ export class ObjectsService {
   de las piedras para destruirlas y ganar puntos.`
   ];
 
-  detailPeliculas: Array<string> = [];
+  // Aun no esta subido
+  detailPeliculas: Array<string> = [
+    `API Películas es un proyecto que realicé en el bootcamp para full stack developers realizado por Geekshubs.
+    Es un proyecto para estudiar como conectarse a una API (en este caso a la de MovieDB) que permite al usuario listar las películas más populares o las que son 
+    tendencia, además de ver información detallada de las mismas.`
+  ];
 
   constructor() { 
     this.inicialiceProjects();
@@ -58,6 +91,7 @@ export class ObjectsService {
       detail: this.detailDuack,
       github: "https://github.com/edunavarro13/ChatbotTurismo",
       bitbucket: "",
+      demo: ""
     });
     // Proyecto GTT
     this.projectArray.push({
@@ -72,6 +106,7 @@ export class ObjectsService {
       detail: this.detailGTT,
       github: "https://github.com/edunavarro13/GTTCertificate",
       bitbucket: "",
+      demo: ""
     });
     // Proyecto N1M
     this.projectArray.push({
@@ -81,11 +116,12 @@ export class ObjectsService {
       date: '04/2017',
       tags: ["HTML5", "CSS", "Bootstrap", "Javascript", "Angular"],
       resume: "Varias apps contra la violencia de género",
-      description: "N1M ayuda a prevenir y concienciar sobre la violencia de género y para realizar llamadas de auxilio en caso de necesidad.",
+      description: "N1M ayuda a prevenir, asistir y concienciar sobre la violencia de género y para realizar llamadas de auxilio en caso de necesidad.",
       image: `./assets/LogoN1M_App.png`,
       detail: this.detailN1M,
       github: "",
       bitbucket: "https://bitbucket.org/jorge3ppss/taes2017/src/master/",
+      demo: ""
     });
     // Proyecto Trello
     this.projectArray.push({
@@ -100,6 +136,7 @@ export class ObjectsService {
       detail: this.detailTrello,
       github: "https://github.com/edunavarro13/ProyectoTrello",
       bitbucket: "",
+      demo: "https://edunavarro13.github.io/ProyectoTrello/trello"
     });
     // Proyecto Destroy Stones
     this.projectArray.push({
@@ -114,6 +151,7 @@ export class ObjectsService {
       detail: this.detailDestroyStones,
       github: "https://github.com/edunavarro13/UnityDestroyStones",
       bitbucket: "",
+      demo: ""
     });
     // Proyecto Peliculas
     this.projectArray.push({
@@ -128,6 +166,7 @@ export class ObjectsService {
       detail: this.detailPeliculas,
       github: "https://github.com/edunavarro13/APIAngular",
       bitbucket: "",
+      demo: "https://edunavarro13.github.io/APIAngular/"
     });
   }
 
