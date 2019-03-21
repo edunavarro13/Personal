@@ -12,4 +12,10 @@
       </div>
     </div>
   </div>
+  <div class="grid-tags">
+    <label class="label-cabecera">Tags: </label>
+    <div class="label-content">
+      <label *ngFor="let tag of projectActual.tags">{{ tag }}, </label>
+    </div>
+  </div>
 </section>
