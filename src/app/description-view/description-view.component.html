@@ -18,4 +18,24 @@
       <label *ngFor="let tag of projectActual.tags">{{ tag }}, </label>
     </div>
   </div>
+  <div class="flex-links">
+    <div *ngIf="projectActual.github">
+      <a href="{{projectActual.github}}" target="_blank">
+        <p>Github</p>
+        <img class="size-logo" src="./assets/github.png">
+      </a>
+    </div>
+    <div *ngIf="projectActual.bitbucket">
+      <a href="{{projectActual.bitbucket}}" target="_blank">
+        <p>Bitbucket</p>
+        <img class="size-logo" src="./assets/bitbucket.png">
+      </a>
+    </div>
+    <div *ngIf="projectActual.demo">
+      <a href="{{projectActual.demo}}" target="_blank">
+        <p>Demo</p>
+        <img class="size-logo" src="./assets/demo.png">
+      </a>
+    </div>
+  </div>
 </section>

@@ -60,15 +60,17 @@
   display: grid;
   justify-items: center;
   align-content: center;
-  background-color: #8fd6e35e; /* For browsers that do not support gradients */
-    background-image: radial-gradient(#8fd6e35e, #76aeb85e, #3d5b615e); /* Standard syntax (must be last) */
+  background-color: #8fd6e35e;
+  /* For browsers that do not support gradients */
+  background-image: radial-gradient(#8fd6e35e, #76aeb85e, #3d5b615e);
+  /* Standard syntax (must be last) */
   border-radius: 10px;
-    border-left: 15px rgb(37, 37, 37) solid;
-    border-right: 15px rgb(26, 26, 26) solid;
-    border-bottom: 7px #73d0df outset;
-    border-top: 7px #73d0df outset;
-    box-sizing: border-box;
-    box-shadow: 7px 7px rgba(0, 0, 0, 0.445);
+  border-left: 15px rgb(37, 37, 37) solid;
+  border-right: 15px rgb(26, 26, 26) solid;
+  border-bottom: 7px #73d0df outset;
+  border-top: 7px #73d0df outset;
+  box-sizing: border-box;
+  box-shadow: 7px 7px rgba(0, 0, 0, 0.445);
 }
 
 .label-cabecera {
@@ -76,13 +78,38 @@
   text-shadow:
     1px 0px 5px rgba(35, 231, 214, 1),
     -1px 1.5px 5px rgba(210, 17, 50, 1);
-  
+
 }
 
 .label-content {
   border-top: 2px outset #73d0df;
   margin-left: 3vw;
   margin-right: 3vw;
+}
+
+.flex-links {
+  margin-top: 5vh;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 2em;
+}
+
+.size-logo{
+  height: 20vh;
+}
+
+a {
+  color: rgb(223, 223, 223);
+  text-shadow: 
+    1px 0px 5px rgba(35, 231, 214, 1),
+    -1px 1.5px 5px rgba(210, 17, 50, 1);
+}
+
+a:hover {
+  color: #0bcdff;
 }
 
 @media screen and (max-width: 600px) {
@@ -102,5 +129,17 @@
   .detail-project {
     margin: 5px;
     font-size: 1.5em;
+  }
+
+  .grid-tags {
+    width: 80vw;
+  }
+
+  .flex-links {
+    font-size: 1.5em;
+  }
+
+  .size-logo{
+    height: 15vh;
   }
 }
