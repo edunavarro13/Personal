@@ -1,66 +1,73 @@
 .section-contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 90vh;
-    background-image: url('../../assets/fondo1.png');
-  }
-  
-  .title-page {
-      font-size: 4em;
-      height: 10vh;
-      width: 100vw;
-      color: rgb(223, 223, 223);
-    text-align: center;
-    text-shadow: 
-      1px 0px 5px rgba(35, 231, 214, 1),
-      -1px 1.5px 5px rgba(210, 17, 50, 1);
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 90vh;
+  background-image: url('../../assets/fondo1.png');
+}
+
+.title-page {
+  font-size: 4em;
+  height: 10vh;
+  width: 100vw;
+  color: rgb(223, 223, 223);
+  text-align: center;
+  text-shadow:
+    1px 0px 5px rgba(35, 231, 214, 1),
+    -1px 1.5px 5px rgba(210, 17, 50, 1);
+}
+
+.flex-description {
+  width: 90vw;
+  min-height: 65vh;
+  display: flex;
+  margin-bottom: 5vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-line-divisor {
+  height: 0.4vh;
+  width: 80vw;
+  background-color: silver;
+  border: 0.1vh solid rgb(151, 151, 151);
+}
+
+.title-icons {
+  font-size: 0.8em;
+  margin-right: 1vw;
+}
+
+.image-icon {
+  width: 30vw;
+}
+
+.detail-project {
+  min-width: 40vw;
+  max-width: 60vw;
+  margin: 20px;
+  box-sizing: border-box;
+  font-size: 1.8em;
+  color: rgb(223, 223, 223);
+}
+
+@media screen and (max-width: 600px) {
   .flex-description {
-      width: 90vw;
-      min-height: 65vh;
-      display: flex;
-      margin-bottom: 5vh;
-      justify-content: center;
-      align-items: center;
+    flex-wrap: wrap;
   }
-  
-  .title-line-divisor {
-      height: 0.4vh;
-      width: 80vw;
-      background-color: silver;
-      border: 0.1vh solid rgb(151, 151, 151);
-  }
-  
-  .title-icons {
-      font-size: 0.8em;
-      margin-right: 1vw;
+
+  .title-page {
+    font-size: 3em;
+    min-height: 20vh;
   }
 
   .image-icon {
-      width: 30vw;
+    width: 80vw;
   }
 
   .detail-project {
-      min-width: 40vw;
-      max-width: 60vw;
-      margin: 20px;
-      box-sizing: border-box;
-      font-size: 1.8em;
-      color: rgb(223, 223, 223);
+    margin: 5px;
+    font-size: 1.5em;
   }
-  
-  @media screen and (max-width: 600px) {
-      .flex-description {
-        flex-wrap: wrap;
-      }
-      .image-icon {
-        width: 80vw;
-      }
-      .detail-project {
-        margin: 5px;
-        font-size: 1.5em;
-      }
-  }
+}

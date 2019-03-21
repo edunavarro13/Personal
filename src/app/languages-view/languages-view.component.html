@@ -19,7 +19,7 @@
     <div class="cell-border">
       <ul>
         <li *ngFor="let project of language.projects">
-          {{ project.name }}
+            <a href="projects/{{project.id}}#options">{{ project.name }}</a>
         </li>
       </ul>
     </div>
@@ -33,7 +33,7 @@
       <img class="image-icon" src="{{language.image}}">
       <ul>
         <li *ngFor="let project of language.projects">
-          {{ project.name }}
+          <a href="projects/{{project.id}}#options">{{ project.name }}</a>
         </li>
       </ul>
     </div>
